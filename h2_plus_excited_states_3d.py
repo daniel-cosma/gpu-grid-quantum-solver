@@ -44,7 +44,7 @@ H = -0.5 * (L / (dx**2)) + V_diag
 # 4.  VTK config and Solver ( Lanczos problably)
 origin = (float(x[0]), float(x[0]), float(x[0]))
 spacing = (dx, dx, dx)
-num_eigenvalues = 1
+num_eigenvalues = 1 #-------edit this value to get the desired ammount of eigenvalues-------
 
 energies, wavefunctions = cspla.eigsh(
     H, k=num_eigenvalues, which="SA", tol=1e-12, maxiter=10000

@@ -67,7 +67,7 @@ for state_idx in range( num_eigenvalues):
         pointData={"psi_sq": orbita_3d},
     )
     print(f"[+] eigenstate {state_idx + 1}/{num_eigenvalues} done!", flush=True)
-# Visualizzazione di una sezione 2D centrale (fetta Z) dell'ultimo stato
+# Z slice of the latest eigenstate
 plt.figure(figsize=(6, 6))
 plt.imshow(orbita_3d[:, :, N // 2], cmap="magma", origin="lower")
 plt.title(f"state {num_eigenvalues-1} - section Z=0")
